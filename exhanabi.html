@@ -829,7 +829,7 @@
         window.addEventListener("mousedown", function (ret) {
             let mouseX = ret.clientX;                           // マウスのx座標
             let mouseY = ret.clientY;                           // マウスのy座標
-            mouseX = (mouseX / window.innerWidth) * 4 - 2;    // -2 ～ +2 に正規化されたx座標
+            mouseX = (mouseX / window.innerWidth) * 2 - 1;    // -1 ～ +1 に正規化されたx座標
             mouseY = -(mouseY / window.innerHeight) * 6 + 3;    // -2 ～ +2 に正規化されたy座標
             let pos = new THREE.Vector3(mouseX, mouseY, 1);     // マウスベクトル
             let x = pos.getComponent(0);
